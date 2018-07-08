@@ -1,0 +1,8 @@
+{
+  "name": "board_api_lambda",
+  "description": "api_lambda_function",
+  "memory": 128,
+  "timeout": 5,
+  "role": "arn:aws:iam::026363199507:role/board_api_lambda_lambda_function",
+  "environment": {}
+}

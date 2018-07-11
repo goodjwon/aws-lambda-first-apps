@@ -6,6 +6,8 @@ const docClient = new AWS.DynamoDB.DocumentClient({region : "ap-northeast-2"});
 
 exports.handle = function(e, ctx, cb) {
 
+  console.log('==> e is '+ e);
+
   /*
   let scanningParameter = {
     TableName : 'Content',
@@ -20,6 +22,10 @@ exports.handle = function(e, ctx, cb) {
     }
   });
 */
+
+
+console.log('==> contentKey is '+ e.contentKey);
+
 
 var params = {
   TableName : 'Content',

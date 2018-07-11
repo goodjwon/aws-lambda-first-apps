@@ -8,9 +8,9 @@ exports.handle = function(e, ctx, callback) {
 
   var params = {
     Item : {
-      contentKey: "1234598778",
+      contentKey: e.contentKey,
       date: Date.now(),
-      message : "I love this coding"
+      message : e.message
     },
     TableName : 'Content'
   };

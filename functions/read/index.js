@@ -24,7 +24,7 @@ exports.handle = function(e, ctx, cb) {
 var params = {
   TableName : 'Content',
   Key : {
-    "contentKey":"1234598778"
+    "contentKey": e.contentKey
   }
 }
 

@@ -4,7 +4,7 @@ console.log('starting function')
 const AWS = require('aws-sdk');
 const docClient = new AWS.DynamoDB.DocumentClient({region : "ap-northeast-2"});
 
-exports.handle = function(e, ctx, callback) {
+exports.handle = function(e, ctx, callback) { //e : event , gateway json param is $.message, $.contentKey
 
   var params = {
     Item : {

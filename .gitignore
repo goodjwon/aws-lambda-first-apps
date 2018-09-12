@@ -87,6 +87,9 @@ local.properties
 # CMake
 cmake-build-debug/
 
+#npm modules
+node_modules/**
+
 # Mongo Explorer plugin:
 .idea/**/mongoSettings.xml
 
